@@ -1,0 +1,22 @@
+.rounded {
+    border-radius: 30px;
+    background: url('/small/imgCover.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 89vh;
+    background-color: grey;
+    position: relative;
+    // border: none;
+
+    &::after{
+        content: "";
+        background: radial-gradient(circle, rgba(27, 27, 27, 0.1) 0%, rgba(228, 160, 23, 0.7) 100%, rgba(3, 3, 3, .0) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        border: none;
+    }
+}
