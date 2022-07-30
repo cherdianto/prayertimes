@@ -3,12 +3,12 @@
     background: url('/small/imgCover.jpg');
     background-size: cover;
     width: 100%;
-    height: 89vh;
+    height: calc(100vh - #{$navbar-height + $footer-height});
     background-color: grey;
     position: relative;
     // border: none;
 
-    &::after{
+    &::before{
         content: "";
         background: radial-gradient(circle, rgba(27, 27, 27, 0.1) 0%, rgba(228, 160, 23, 0.7) 100%, rgba(3, 3, 3, .0) 100%);
         position: absolute;
@@ -18,5 +18,63 @@
         height: 100%;
         border-radius: 10px;
         border: none;
+        z-index: 1;
     }
+
+    @media (max-width: 991px) {
+        height: 82vh;
+    }
+}
+
+.content-main {
+    z-index: 100;
+}
+
+.current-date {
+    position: absolute;
+    right: 20px;
+    top: 0;
+    width: 200px;
+    height: 100px;
+    z-index: 100;
+
+    @media (max-width: 500px){
+        right: 50%;
+        transform: translate(50%);
+    }
+    // background-color: grey;
+}
+
+.prayer-times {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    @media (max-width: 500px){
+        padding: 0 0 10px 0!important;
+        margin: 0;
+        // gap: 0px!important;
+    }
+}
+
+.current-time {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+    z-index: 100;
+
+    @media (min-width: 1200px){
+        top: 50%!important;
+    }
+
+    
+}
+
+.text-current-time {
+    font-size: 50px;
 }

@@ -25,7 +25,7 @@ function NavbarComponent() {
   return (
     <React.Fragment>
         <Container>
-            <Navbar className={navClass}>
+            <Navbar className={'navbar-height' + navClass}>
                 <NavbarBrand href='#' className='fs-4'><strong>Prayer</strong><i>Times</i></NavbarBrand>
                 
                 <div className='d-flex flex-row align-items-center fs-6'>

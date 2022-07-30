@@ -1,0 +1,11 @@
+.footer-height {
+    height: $footer-height;
+}
+
+.footer-mobile-center {
+    @media (max-width: 991px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

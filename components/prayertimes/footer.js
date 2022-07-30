@@ -5,19 +5,19 @@ import Link from 'next/link';
 function Footer() {
   return (
     <React.Fragment>
-        <footer className='py-2'>
+        <footer className='footer-height d-flex align-items-center'>
             <Container>
                 <Row className='fs-6 px-3'>
-                    <Col lg={6}>
-                        <div className="">
+                    <Col lg={6} sm={12}>
+                        <div className="footer-mobile-center">
                             <p>
                                 {new Date().getFullYear()} - Made with <i className="ri-heart-2-fill text-danger"></i> by Candra Herdianto
                             </p>
                         </div>
                     </Col>
-                    <Col sm={6}>
+                    <Col lg={6} sm={12}>
                             <div className="text-sm-end mt-3 mt-sm-0">
-                                <ul className="list-inline mb-0 footer-social-link">
+                                <ul className="list-inline mb-0 footer-social-link footer-mobile-center">
                                     <li className="list-inline-item">
                                         <Link href="https://www.facebook.com/candra.herdianto" className="avatar-xs d-block">
                                             <div>

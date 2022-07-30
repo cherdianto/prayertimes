@@ -1,8 +1,13 @@
 @import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 
+// variables
+@import './configs/variables';
+
 // COMPONENTS
 @import './components/main';
 @import './components/time';
+@import './components/navbar';
+@import './components/footer';
 
 // ICONS
 @import './icons/remixicon';
