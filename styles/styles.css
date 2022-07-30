@@ -4,7 +4,7 @@
   background: url("/small/imgCover.jpg");
   background-size: cover;
   width: 100%;
-  height: calc(100vh - 8em);
+  height: calc(100vh - 10em);
   background-color: grey;
   position: relative;
 }
@@ -19,11 +19,6 @@
   border-radius: 10px;
   border: none;
   z-index: 1;
-}
-@media (max-width: 991px) {
-  .rounded {
-    height: 82vh;
-  }
 }
 
 .content-main {
@@ -62,8 +57,8 @@
   position: absolute;
   top: 10%;
   left: 50%;
-  transform: translate(-50%);
-  width: 100%;
+  transform: translate(-49%);
+  width: 80%;
   z-index: 100;
 }
 @media (min-width: 1200px) {
@@ -85,11 +80,13 @@
 }
 
 .navbar-height {
-  height: 4em;
+  height: 5em;
+  background-color: transparent;
+  border-radius: 10px;
 }
 
 .footer-height {
-  height: 4em;
+  height: 5em;
 }
 
 @media (max-width: 991px) {
@@ -9285,4 +9282,8 @@ body {
 p {
   margin: 0;
   padding: 0;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */

@@ -36,7 +36,7 @@ function Main() {
 
   return (
     <React.Fragment>
-        <Container>
+        <Container className='g-0'>
             <div className='rounded height-90 p-2'>
                 <Row className='p-3'>
                     <Col className='current-date d-flex align-items-center justify-content-between'>    
@@ -72,7 +72,7 @@ function Main() {
                                 )
                             }
                         </p>
-                        <p className='text-white'>50 menit menuju sholat Ashar</p>
+                        {/* <p className='text-white'>50 menit menuju sholat Ashar</p> */}
                     </div>
                 </Row>
                 { timings !== null ? (

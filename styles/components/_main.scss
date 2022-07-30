@@ -21,9 +21,6 @@
         z-index: 1;
     }
 
-    @media (max-width: 991px) {
-        height: 82vh;
-    }
 }
 
 .content-main {
@@ -64,8 +61,8 @@
     position: absolute;
     top: 10%;
     left: 50%;
-    transform: translate(-50%);
-    width: 100%;
+    transform: translate(-49%);
+    width: 80%;
     z-index: 100;
 
     @media (min-width: 1200px){
