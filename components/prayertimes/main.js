@@ -21,7 +21,7 @@ function Main() {
         setInterval(()=> setDateNow(new Date(), 30000))
         getLoc();
 
-        const url = 'http://api.aladhan.com/v1/timings/1398332113?latitude=' + lat + '&longitude=' + long + '&method=2'
+        const url = 'https://api.aladhan.com/v1/timings/1398332113?latitude=' + lat + '&longitude=' + long + '&method=2'
         console.log(url);
 
         if (lat !== null && long !== null) {
@@ -75,7 +75,7 @@ function Main() {
                         <p className='text-white'>50 menit menuju sholat Ashar</p>
                     </div>
                 </Row>
-                { timings !== null && (
+                { timings !== null ? (
                         <Row className='prayer-times d-flex justify-content-center gap-4 p-5'>
                             <TimeComponent prayer='Fajr' time={timings.Fajr} />
                             <TimeComponent prayer='Sunrise' time={timings.Sunrise} />
@@ -84,6 +84,12 @@ function Main() {
                             <TimeComponent prayer='Maghrib' time={timings.Maghrib} />
                             <TimeComponent prayer='Isya' time={timings.Isha} />
                         </Row>
+                    ) 
+                    :
+                    (
+                        <p className="text-center fs-1">
+                            <i className="ri-loader-line"></i>
+                        </p>
                     )
                 }
             </div>
