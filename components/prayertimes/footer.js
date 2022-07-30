@@ -7,7 +7,7 @@ function Footer() {
     <React.Fragment>
         <footer className='footer-height d-flex align-items-center'>
             <Container className='g-0'>
-                <Row className='fs-6 px-3'>
+                <Row className='fs-6 px-3 g-0'>
                     <Col lg={6} sm={12}>
                         <div className="footer-mobile-center">
                             <p>
